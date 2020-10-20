@@ -1,0 +1,101 @@
+#index {
+    background-image: url("../img/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    font-family: 'Commissioner', sans-serif;
+    color: white;
+}
+
+.content .header {
+    text-align: right;
+    margin-top: 10vh;
+    margin-right: 10vw;
+}
+
+.content .header h1 {
+    font-size: 100px;
+}
+
+.content .info {
+
+    position: absolute;
+    transform: translate(10vw, 10px);
+    transition: ease-in 0.5s;
+
+    width: 40vw;
+    border-top: 2px solid white;
+}
+
+ul {
+    background-color: rgb(168, 168, 168);
+    display: block;
+    opacity: 0.75;
+    border-radius: 10px;
+}
+
+ul a {
+    color: white;
+    transition: 0.8 ease;
+}
+
+ul a:hover {
+    color: rgb(199, 199, 199);
+}
+
+
+.top-half {
+    background-color: rgb(236, 218, 177);
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    transform: translate(0vw, -10vh);
+
+    text-align: right;
+    margin-top: 10vh;
+    margin-right: 10vw;
+}
+
+
+.bottom-half {
+    background-color:rgb(49, 49, 49);
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    transform: translate(0vw, 50vh);
+}
+
+#about {
+    background-image: url("../img/skateboardwater.jpg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: 40vw;
+
+    font-family: 'Commissioner', sans-serif;
+    color: white;
+    background-color: grey;
+}
+
+.about-info {
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    background-color: rgb(143, 123, 86);
+    transform: translate(0vw, 0vh);
+
+    transition: ease-in 0.3s;
+}
+
+.about-info:hover {
+    width: 41vw;
+}
+
+#skateboard {
+    position: absolute;
+
+}
+
+#trucks {
+    position: absolute;
+    transform: translate(50vw, 50vh);
+}
