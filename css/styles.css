@@ -10,6 +10,26 @@
     } 
 } 
 
+@keyframes slideInLeftAnimation {
+    0% {
+       position: absolute;
+       transform: translate(-100vw); 
+    }
+    100% {
+       position: relative; 
+    }
+}
+
+@keyframes slideInRightAnimation {
+    0% {
+        position: absolute;
+        transform: translate(200vw);
+    }
+    100% {
+        position: relative;
+    }
+}
+
 body {
     animation: fadeInAnimation ease 3s; 
     animation-iteration-count: 1; 
@@ -31,6 +51,10 @@ body {
     text-align: right;
     margin-top: 10vh;
     margin-right: 10vw;
+
+    animation: slideInRightAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .content .header h1 {
@@ -46,6 +70,11 @@ body {
     width: 40vw;
     border-top: 2px solid white;
     display: flex;
+
+    animation: slideInLeftAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
 ul {
@@ -54,6 +83,11 @@ ul {
     opacity: 0.5;
     border-radius: 10px;
     transition: 0.8s ease;
+
+    animation: slideInLeftAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
 }
 
 ul:hover {
