@@ -20,18 +20,24 @@
 .content .info {
 
     position: absolute;
-    transform: translate(10vw, 10px);
+    transform: translate(10vw, 1vh);
     transition: ease-in 0.5s;
 
     width: 40vw;
     border-top: 2px solid white;
+    display: flex;
 }
 
 ul {
     background-color: rgb(168, 168, 168);
     display: block;
-    opacity: 0.75;
+    opacity: 0.5;
     border-radius: 10px;
+    transition: 0.8s ease;
+}
+
+ul:hover {
+    opacity: 1;
 }
 
 ul a {
@@ -66,14 +72,26 @@ ul a:hover {
 }
 
 #about {
-    background-image: url("../img/skateboardwater.jpg");
     background-repeat: no-repeat;
-    background-size: 90%;
-    background-position-x: 40vw;
 
     font-family: 'Commissioner', sans-serif;
     color: white;
     background-color: grey;
+}
+
+#gallery {
+    position: absolute;
+    transform: translate(40vw, 0vh);
+}
+
+#gallery .slide img {
+    width: 50%;
+    height: 50%;
+}
+
+.slide {
+
+    display: none;
 }
 
 .about-info {
@@ -88,6 +106,22 @@ ul a:hover {
 
 .about-info:hover {
     width: 41vw;
+}
+
+.about-info-text {
+    text-align: left;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 30vw;
+
+}
+
+.about-info h4  {
+   text-align: center; 
+}
+
+#cred {
+    text-align: center;
 }
 
 #skateboard {
