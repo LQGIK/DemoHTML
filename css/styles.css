@@ -1,5 +1,25 @@
+
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1;
+
+    } 
+} 
+
+body {
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+
+
 #index {
-    background-image: url("../img/nature.jpg");
+    background-image: url("../img/Landscape.png");
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -49,34 +69,12 @@ ul a:hover {
     color: rgb(199, 199, 199);
 }
 
-
-.top-half {
-    background-color: rgb(236, 218, 177);
-    width: 100vw;
-    height: 50vh;
-    position: absolute;
-    transform: translate(0vw, -10vh);
-
-    text-align: right;
-    margin-top: 10vh;
-    margin-right: 10vw;
-}
-
-
-.bottom-half {
-    background-color:rgb(49, 49, 49);
-    width: 100vw;
-    height: 50vh;
-    position: absolute;
-    transform: translate(0vw, 50vh);
-}
-
 #about {
     background-repeat: no-repeat;
 
     font-family: 'Commissioner', sans-serif;
     color: white;
-    background-color: grey;
+    background-color: rgb(22, 4, 4);
 }
 
 #gallery {
@@ -85,13 +83,25 @@ ul a:hover {
 }
 
 #gallery .slide img {
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 100vh;
+    border-radius: 30px;
+    opacity: 90%;
+    transition: opacity ease-in 0.3s;
+}
+
+#gallery .slide img:hover {
+    opacity: 100%;
 }
 
 .slide {
-
     display: none;
+    border: black 100px;
+    
+}
+
+.slide:hover {
+    border: black 1px;
 }
 
 .about-info {
@@ -100,6 +110,7 @@ ul a:hover {
     height: 100vh;
     background-color: rgb(143, 123, 86);
     transform: translate(0vw, 0vh);
+    border-color: black;
 
     transition: ease-in 0.3s;
 }
@@ -118,6 +129,22 @@ ul a:hover {
 
 .about-info h4  {
    text-align: center; 
+}
+
+#wheel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#wheel:hover {
+    animation: spin 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
 }
 
 #cred {
